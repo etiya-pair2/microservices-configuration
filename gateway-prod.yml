@@ -1,13 +1,9 @@
 spring:
   application:
     name: gateway
-
 server:
   port: 8090
-
 eureka:
-  instance:
-    hostname: gateway
   client:
     register-with-eureka: false
     fetch-registry: false

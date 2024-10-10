@@ -11,11 +11,9 @@ spring:
       ddl-auto: update
 
 eureka:
-  instance:
-    hostname: localhost
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://eureka:8888/eureka/
 
