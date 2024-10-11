@@ -34,7 +34,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://gateway:8888/eureka/
+      defaultZone: http://eureka:8888/eureka/
 
 management:
   endpoints:
