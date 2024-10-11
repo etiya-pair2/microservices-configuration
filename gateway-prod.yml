@@ -28,8 +28,8 @@ server:
   port: 8090
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://gateway:8888/eureka/
 
