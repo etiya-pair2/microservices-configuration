@@ -14,13 +14,13 @@ spring:
             predicates:
               - Path=/api/products/**
           - id: eureka.routing
-            uri: ${eureka.url}
+            uri: lb://eureka
             predicates:
               - Path=/eureka/web
             filters:
               - SetPath=/
           - id: eureka.static-files
-            uri: ${eureka.url}
+            uri: lb://eureka
             predicates:
               - Path=/eureka/**
   
