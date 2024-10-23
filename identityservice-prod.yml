@@ -2,7 +2,7 @@ spring:
   application:
     name: identityservice
   datasource:
-    url: jdbc:postgresql://identityservice.db:5433/identitydb
+    url: jdbc:postgresql://identityservice.db:5432/identitydb
     username: postgres
     password: test
     driver-class-name: org.postgresql.Driver
