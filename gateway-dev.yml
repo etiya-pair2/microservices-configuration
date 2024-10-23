@@ -20,11 +20,11 @@ spring:
          - id: product-service.routing
            uri: lb://productservice
            predicates:
-             - Path=/api/product/**
+             - Path=/api/v1/order/**
          - id: product-service.routing
            uri: lb://productservice
            predicates:
-             - Path=/api/product/**
+             - Path=/api/v1/product/**
          - id: eureka.routing
            uri: ${eureka.url}
            predicates:
